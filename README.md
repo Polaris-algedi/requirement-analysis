@@ -75,3 +75,38 @@ Non-functional requirements specify the quality attributes, performance, and con
 - The user interface should load within 2 seconds on standard internet connections, utilizing a CDN to reduce latency and improve content delivery.
 - Historical data should be archived in a scalable NoSQL database like Cassandra for efficient storage and retrieval as data size grows.
 
+
+## Use Case Diagrams
+
+Use Case Diagrams are a visual representation of the interactions between users (actors) and the system to achieve a specific goal. These diagrams help identify the functional requirements of a system and how various users interact with it.
+
+### Benefits of Use Case Diagrams
+
+- **Clarity in Requirements:** Use Case Diagrams provide a clear and concise view of the system's functionalities and how users interact with it.
+- **Improved Communication:** They serve as a common language between stakeholders and developers, ensuring a shared understanding of the system.
+- **Facilitates Design and Development:** By identifying the key interactions, Use Case Diagrams help in designing the system architecture and workflows.
+- **Simplified Testing:** They assist in creating test cases by outlining specific user interactions and scenarios.
+
+
+## Acceptance Criteria
+
+Acceptance criteria are a set of predefined requirements that must be met for a feature or system to be considered complete and acceptable by stakeholders. These criteria ensure that the development team delivers exactly what the stakeholders expect.
+
+### Importance in Requirement Analysis
+
+- **Clarity:** Acceptance criteria provide a clear understanding of what is expected, reducing ambiguity.
+- **Alignment:** They align the development team's work with stakeholder expectations.
+- **Validation:** They serve as a benchmark to verify that the developed feature meets the requirements.
+- **Efficient Testing:** Acceptance criteria guide the creation of test cases to ensure thorough validation.
+
+### Example: Checkout Feature in Booking Management System
+
+**Acceptance Criteria:**
+
+1. Users must be able to review the selected hotel details, including name, location, dates, and price, before confirming the booking.
+2. Users should be able to enter payment information, including card details or alternative payment methods.
+3. The system should validate payment details and display appropriate error messages if invalid.
+4. Upon successful payment, the booking confirmation screen should display a unique booking ID and a summary of the booking.
+5. A booking confirmation email or SMS should be sent to the user within 30 seconds.
+6. The booking record must be saved in the database and cached in Redis for immediate access.
+
