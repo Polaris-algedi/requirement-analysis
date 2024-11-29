@@ -30,7 +30,6 @@ Requirement analysis is a fundamental step in the software development lifecycle
 
 3. **Enhances Communication:** It serves as a bridge between stakeholders and the development team, ensuring all parties are aligned and understand the project goals and constraints.
 
-
 ## Key Activities in Requirement Analysis
 
 - **Requirement Gathering:**
@@ -47,4 +46,32 @@ Requirement analysis is a fundamental step in the software development lifecycle
 
 - **Requirement Validation:**
   Reviewing and verifying requirements with stakeholders to confirm that they accurately represent their needs and are achievable within the project’s constraints.
+
+## Types of Requirements
+
+### Functional Requirements
+
+Functional requirements define the specific behaviors, features, or functions of a system. These requirements describe what the system should do to fulfill user and business needs.
+
+#### Examples for Booking Management Project:
+
+- Users should be able to search for available hotels by location, date, and number of guests using Elasticsearch for efficient query handling.
+- The system should allow users to create, update, and cancel bookings, with Redis used to cache booking data for faster processing.
+- Payment integration should support multiple payment methods through a third-party payment service.
+- Users should receive booking confirmation via email or SMS, utilizing a messaging queue system like Kafka for real-time notification delivery.
+- Administrators should have a separate portal to manage hotel listings and related information via the Hotel Management Service.
+- Hotel managers should be able to update their property details, which will sync to the database and CDN for real-time availability.
+
+### Non-functional Requirements
+
+Non-functional requirements specify the quality attributes, performance, and constraints of the system. These requirements describe how the system performs its functions, rather than the specific functions themselves.
+
+#### Examples for Booking Management Project:
+
+- The system should handle up to 10,000 concurrent users without performance degradation, distributing requests through load balancers.
+- Booking confirmation emails and notifications should be delivered within 30 seconds of payment completion via Kafka consumers.
+- The application should have a 99.9% uptime guarantee, leveraging a microservice architecture with failover mechanisms.
+- Data encryption should be implemented during transmission and storage, and sensitive data should comply with security standards such as GDPR.
+- The user interface should load within 2 seconds on standard internet connections, utilizing a CDN to reduce latency and improve content delivery.
+- Historical data should be archived in a scalable NoSQL database like Cassandra for efficient storage and retrieval as data size grows.
 
