@@ -30,3 +30,21 @@ Requirement analysis is a fundamental step in the software development lifecycle
 
 3. **Enhances Communication:** It serves as a bridge between stakeholders and the development team, ensuring all parties are aligned and understand the project goals and constraints.
 
+
+## Key Activities in Requirement Analysis
+
+- **Requirement Gathering:**
+  Collecting information from stakeholders, users, and other relevant sources to understand their needs and expectations for the software system.
+
+- **Requirement Elicitation:**
+  Actively engaging with stakeholders through techniques like interviews, workshops, and surveys to uncover implicit and explicit requirements.
+
+- **Requirement Documentation:**
+  Organizing and recording the gathered requirements in a clear and structured format, such as Software Requirement Specifications (SRS), to ensure all stakeholders have a shared understanding.
+
+- **Requirement Analysis and Modeling:**
+  Evaluating the requirements to ensure they are feasible, consistent, and aligned with project objectives. This may involve creating visual models like use-case diagrams or process flows.
+
+- **Requirement Validation:**
+  Reviewing and verifying requirements with stakeholders to confirm that they accurately represent their needs and are achievable within the project’s constraints.
+
